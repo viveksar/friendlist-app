@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>Go Gaga App</Title>
+       <link rel="stylesheet" href="./css/friend.css">
+    </head>
+
+    <body>
+       <div id='main'>
+        <h1>Welcome <span id="userspan">{{username}}</span></h1>
+
+    
+        <div id='addfriend'>
+        <form action="/addfriend" method="POST" id="addfriend">
+          User Name:  <input type="text" placeholder="username" id='username' value={{username}} name='username'><br>
+          Friend name:  <input type='text' id='friendname' placeholder="add friend" name='friend'><br>
+            <input id='addfriendsubmit' type="submit"/>
+        </form>
+    </div>
+    <div id='friendlist'>
+        <form action="/friendlist" method="POST" id="friendlist">
+           User Name:   <input type="text" placeholder="username" id='userfriendname' value={{username}} name='username'><br>
+            
+            <input id='friendlistsubmit' value="my friend list" type="submit"/>
+        </form>
+    </div>
+    </div>
+
+
+
+    <script src="./js/friend.js"></script> 
+    </body>
+</html>
